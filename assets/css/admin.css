@@ -1,0 +1,93 @@
+* {
+  font-family: "Kanit", sans-serif;
+}
+
+.rectangle {
+  position: absolute;
+  width: 550px;
+  height: 657px;
+  left: 0px;
+  top: 0px;
+  background: #ef5350;
+}
+
+.rectangle2 {
+  position: absolute;
+  left: 500px;
+  height: 0px;
+  top: 232px;
+  width: 0px;
+  border-bottom: solid 425px #ef5350;
+  border-left: solid 120px transparent;
+  border-right: solid 140px transparent;
+}
+
+.triangle {
+  position: absolute;
+  left: 470px;
+  height: 0px;
+  width: 0px;
+  border-bottom: solid 625px #ef5350;
+  border-left: solid 80px transparent;
+  border-right: solid 200px transparent;
+}
+
+img {
+  position: absolute;
+  margin-left: -500px;
+  margin-top: 50px;
+  width: 450px;
+  height: 400px;
+}
+
+h2 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+}
+
+h2,
+.chicken {
+  margin-top: 430px;
+}
+
+h2,
+.admin {
+  margin-top: -30px;
+}
+
+.form {
+  position: absolute;
+  top: 100px;
+  right: 250px;
+  font-size: 35px;
+}
+
+.form-input {
+  width: 200px;
+  height: 25px;
+}
+
+.btn-login {
+  width: 50px;
+  height: 25px;
+  margin-left: 80px;
+}
+
+.form-input {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.btn-login {
+  width: 200px;
+  height: 45px;
+  margin-top: 25px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: 1px solid #ef5350;
+  background-color: #ef5350;
+  font-size: 25px;
+  color: white;
+}

@@ -3,9 +3,9 @@
 session_start();
 
 $DB_host = "localhost";
-$DB_user = "iancoden_pbo";
-$DB_pass = "Pukimak123@";
-$DB_name = "iancoden_pbo";
+$DB_user = "root";
+$DB_pass = "";
+$DB_name = "chicken_pioneer";
 
 try
 {
@@ -18,5 +18,5 @@ catch(PDOException $e)
 }
 
 
-include_once 'class.user.php';
-$user = new USER($DB_con);
+include_once 'class.admin.php';
+$user = new ADMIN($DB_con);
