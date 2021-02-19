@@ -1,0 +1,1258 @@
+/* color */
+/* 
+    #f4f3f3 - > creampie
+    #c5283d - > merah gelap
+    #DB212E - > merah
+    #D99289 - > coklat
+    #FFE5DD - > cream 
+    #92ABE1 - > biru
+    #111d5e - > biru gelap
+*/
+
+.active {
+}
+
+section {
+  /* transition: 0.8s ease; */
+  /* overflow-y: scroll; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* background-color: #FFF; */
+}
+
+body {
+  background-image: url(../../img/topography.svg);
+}
+
+/*=================NAVBAR==================*/
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  /* top: -60px; */
+  /* transition: top 0.3s; */
+  background: white;
+  z-index: 1;
+  transition: 0.8s ease;
+}
+
+.navbar-logo {
+  padding: 1em;
+  margin-left: 2.5em;
+  text-decoration: none;
+  margin-top: auto;
+  /* margin-bottom: auto; */
+}
+
+.navbar-logo a {
+  font-family: "Kanit", sans-serif;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.navbar-link ul {
+  display: flex;
+  list-style-type: none;
+  padding: 1.3em 1em;
+  margin-right: 8.5em;
+  /* margin-right: 10em; */
+  /* background-color: green; */
+}
+
+a {
+  text-decoration: none;
+}
+
+a li:active {
+  color: #ef5350;
+}
+
+.openbtn {
+  list-style-type: none;
+  position: absolute;
+  right: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  top: 25%;
+}
+
+.openbtn,
+.closebtn {
+  display: none;
+}
+
+li {
+  margin: 0 1.5em;
+  color: #000;
+  font-size: 1.1em;
+}
+
+/* =================HEADER PAGE=================*/
+
+.header-page {
+  height: 105vh;
+  background-image: url(../../img/retina_wood.png);
+  background-size: cover;
+  background-position: top;
+}
+
+.header-img {
+  width: 72%;
+  /* opacity: 0.3; */
+  position: absolute;
+  left: -5%;
+  top: -2%;
+}
+
+.header-page .container {
+  /* background-color: blueviolet; */
+  position: absolute;
+  top: 52%;
+  /* left: 75%; */
+  right: 5%;
+  width: 50%;
+  transform: translateY(-50%);
+}
+
+.container h1 {
+  font-size: 2.5em;
+  /* letter-spacing: 0.1em; */
+  text-transform: uppercase;
+  text-align: right;
+  color: #ef5350;
+  -webkit-text-stroke: 2px #ef5350;
+  /* text-shadow: 6px -1px #ef5350; */
+  font-family: "Kanit", sans-serif;
+}
+
+.container h1::after {
+  content: "PLATFORM JUAL AYAM POTONG TERMURAH DI KOTA BANDUNG";
+  position: absolute;
+  top: 0;
+  right: 1%;
+  font-size: 0.99em;
+  /* -webkit-text-stroke: 3px #ef5350; */
+  text-shadow: 6px 2px #ef5350;
+  color: white;
+}
+
+.container h3 {
+  word-wrap: wrap;
+  text-align: right;
+  font-family: "Kanit", sans-serif;
+  color: #ef5350;
+  font-weight: 900;
+  font-size: 1.98em;
+}
+
+.container .btn-shopping {
+  text-align: center;
+  margin-left: 59%;
+  display: inline-block;
+  transform: translateX(27%);
+  margin-top: 4%;
+  padding: 7.5px 9px;
+  background-color: #ef5350;
+  color: white;
+  border: 2px solid #ef5350;
+  border-radius: 15px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.btn-shopping:link,
+.btn-shopping:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7.5px 9px;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.container .btn-shopping:hover {
+  transform: translate(27%, -3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .btn-shopping:active {
+  transform: translate(27%, -3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*========================ABOUT CHIPIO========================*/
+.about-chipio {
+  height: auto;
+  padding: 1em;
+  margin-bottom: 5%;
+}
+
+.about-chipio-title {
+  text-align: center;
+  padding: 1.5em;
+}
+
+.about-chipio-title h1 {
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.about-chipio-containers {
+  width: 100%;
+  /* margin-top: 1%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 5%;
+  /* border-right: 9px solid white; */
+  padding: 0 160px;
+  /* background-color: blue; */
+}
+
+.about-chipio-containers .card-layout {
+  background-color: #fff;
+  border: 1px solid #e2e9ed;
+  box-shadow: 0 0 0 1px #e2e9ed;
+  width: 478px;
+  height: 412px;
+  border: none;
+  background-image: url(../../img/retina_wood.png);
+}
+
+.about-chipio-containers .card-layout:last-child p:first-child {
+  text-align: justify;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 12.5%;
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+}
+
+.about-chipio-containers .card-layout:last-child p:nth-child(2) {
+  text-align: justify;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+}
+
+.about-chipio-containers .card-layout:last-child p:last-child {
+  text-align: justify;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+}
+
+.about-chipio-containers .card-layout .card-img {
+  width: 505px;
+  height: 407px;
+  /* border-radius: 50%; */
+  margin-left: 46.5%;
+  transform: translateX(-50%);
+  margin-right: auto;
+  margin-top: 0;
+  display: block;
+  /* border: 2px solid rgb(61, 61, 60); */
+  padding: 10px;
+}
+
+/*========================ABOUT PRODUCTS========================*/
+
+.about-products {
+  height: auto;
+  /* padding: 1em; */
+}
+
+main h3 {
+  margin: 10px 0 10px 0;
+  font-size: 25px;
+  text-align: center;
+  color: Black;
+}
+
+.about-title {
+  text-align: center;
+  padding: 0.75em 1.5em;
+}
+
+.about-title h1 {
+  font-family: "Kanit", sans-serif;
+}
+
+hr {
+  display: block;
+  margin: 5px auto 0 auto;
+  width: 230px;
+  border-top: 4px solid #000;
+  /* margin-top: 20px; */
+}
+
+.about-products-containers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 55px;
+  padding: 20px 75px 40px 75px;
+  background-image: url(../../img/retina_wood.png);
+  margin-bottom: 50px;
+}
+
+/* .about-products-containers .card-layout {
+    height: 80vh;
+    background-color: #FFF6F7;
+  } */
+
+.about-products-containers .card-layout .about-icon {
+  width: 20vh;
+  height: 20vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-products-containers .card-layout h3 {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.about-products-containers .card-layout h4 {
+  text-align: center;
+  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+}
+
+/*========================FEATURED PRODUCTS========================*/
+
+.featured-products {
+  /* margin-top: 5vh; */
+  height: auto;
+}
+
+.featured-containers span h2 {
+  /* line-height: 3.5em; */
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  /* display: block; */
+}
+
+.featured-card-containers {
+  width: 100%;
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 25px;
+  padding: 20px 85px 0px 85px;
+  background-image: url(../../img/retina_wood.png);
+}
+
+.featured-card-containers .card-layout {
+  background-color: white;
+  border-radius: 10px;
+  width: 172px;
+  margin-left: 17%;
+  height: auto;
+  margin-bottom: 20%;
+}
+
+.featured-card-containers .card-layout .card-img {
+  width: 100%;
+  background-color: #fff;
+  height: 160px;
+  border-radius: 5px;
+}
+
+.featured-card-containers .card-layout .card-title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.featured-card-containers .card-layout .card-price {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 0.9em;
+  margin-bottom: 3%;
+}
+
+.featured-card-containers .card-layout .order-layout {
+  border-radius: 5px;
+  margin-bottom: 3%;
+}
+
+.featured-card-containers .card-layout a {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: #ef5350;
+  display: inline-block;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 50%;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+/*========================BREAK SECTION========================*/
+
+/* .break-section {
+      height: 20vh;
+      padding: 1em;
+  } */
+
+/*========================OUR TEAMS========================*/
+
+.team {
+  height: auto;
+  /* background-color: greenyellow; */
+}
+
+.team-title-containers {
+  text-align: center;
+  padding: 1em;
+  margin-top: 3%;
+}
+
+.team-title-containers h2 {
+  font-family: "Kanit", sans-serif;
+}
+
+.team-card-containers {
+  width: 100%;
+  /* margin-top: 1%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 80px;
+  /* border-right: 9px solid white; */
+  padding: 30px 70px 40px 70px;
+  margin-bottom: 5%;
+  background-image: url(../../img/retina_wood.png);
+  /* background-color: blue; */
+}
+
+.team-card-containers .card-layout {
+  background-color: #fff;
+  transition: 0.2s ease-in;
+  border: 1px solid #e2e9ed;
+  box-shadow: 0 0 0 1px #e2e9ed;
+}
+
+.team-card-containers .card-layout:hover {
+  overflow: hidden;
+  margin: 1% 0 -1px -1px;
+  transform: scale(1.05);
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+}
+
+.team-card-containers .card-layout:hover .icon-contact {
+  margin: -2% 0 -1px -1px;
+  opacity: 1;
+  transition: 0.2s ease-in;
+}
+
+/* .team-card-containers .card-layout:hover .icon-contact span{
+      margin: 1% 0 -1px -1px;
+      opacity: 1;
+      transition: 1s ease-in;
+  }
+  
+  .team-card-containers .card-layout:hover .icon-contact .fa-instagram{
+      margin: 1% 0 -1px -1px;
+      opacity: 1;
+      transition: 1s ease-in;
+  } */
+
+.team-card-containers .card-layout:hover h4 {
+  margin: 1% 0 -1px -1px;
+  margin-top: 3%;
+  transition: 0.2s ease-in;
+}
+
+.team-card-containers .card-layout h4,
+p {
+  /* margin-top: 3%; */
+  text-align: center;
+}
+
+.team-card-containers .card-layout h4 {
+  margin-top: 8%;
+  transition: 0.2s ease-in;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.team-card-containers .card-layout p {
+  /* margin-top: 1%; */
+  font-size: 1.1em;
+  font-weight: light;
+}
+
+.team-card-containers .card-layout .card-img {
+  width: 70%;
+  height: 37vh;
+  /* border-radius: 50%; */
+  margin-left: 51.5%;
+  transform: translateX(-50%);
+  margin-right: auto;
+  margin-top: 3%;
+  display: block;
+  border: 2px solid rgb(61, 61, 60);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.team-card-containers .card-layout .icon-contact {
+  font-size: 2em;
+  text-align: center;
+  margin-top: -3%;
+  opacity: 0;
+}
+
+.fb,
+.ig {
+  width: 12px;
+  height: 12.25px;
+}
+
+.team-card-containers .card-layout .icon-contact span {
+  margin: 0 5px;
+}
+
+/*========================CONTACT========================*/
+.contact-title-containers {
+  text-align: center;
+  padding: 1em;
+  margin-top: 3%;
+}
+
+.contact-card-containers {
+  width: 100%;
+  /* margin-top: 1%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 70px;
+  /* border-right: 9px solid white; */
+  padding: 30px 70px 40px 70px;
+  margin-bottom: 5%;
+  /* background-color: blue; */
+}
+
+.contact-card-containers .card-layout {
+  /* margin-left: 25%; */
+}
+
+.contact-card-containers .card-layout .card-img {
+  width: 20%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-card-containers .card-layout h4 {
+  text-align: center;
+}
+
+/*========================FOOTER========================*/
+
+footer {
+  height: auto;
+  background-color: #d9d9d9;
+  padding: 1em;
+  text-align: center;
+}
+
+.footer-contact-containers {
+  width: 100%;
+  margin-top: 4%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 50px;
+  padding: 0 70px;
+  /* background-color: blue; */
+}
+
+.address {
+  text-align: left;
+  color: #000;
+  margin-top: 2%;
+}
+
+.address p:nth-child(3) {
+  margin-top: 3%;
+}
+
+footer .footer-contact-containers .logo-icon,
+.social-media {
+  text-align: left;
+  color: ivory;
+  font-size: 0.9em;
+}
+
+footer .footer-contact-containers .social-media {
+  grid-column-start: 3;
+  margin-top: -5%;
+}
+
+footer .footer-contact-containers .social-media a {
+  color: #000;
+}
+
+footer .footer-contact-containers .social-media span {
+  padding: 0 35px;
+}
+
+footer .footer-contact-containers .logo-icon {
+  width: 100%;
+  margin-top: -50px;
+  /* padding-bottom: -200px; */
+}
+
+footer .footer-contact-containers .logo-icon span {
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: black;
+}
+
+/* footer .contact-containers .logo-icon .location h5{
+      display: inline-block;
+  } */
+
+footer .footer-contact-containers .logo-icon p {
+  text-align: left;
+  display: inline-block;
+  /* margin-left: 0; */
+}
+
+footer .footer-contact-containers .logo-icon .dot {
+  /* display: inline-block; */
+  font-size: 18px;
+  line-height: 1.86;
+  padding: 0 10px;
+  /* width: 26.09px; */
+  /* background-color: green; */
+}
+
+footer .copyright {
+  color: #000;
+  text-align: center;
+  /* margin-left: 5%; */
+  margin-top: 3%;
+}
+
+footer .contact-containers .logo-icon,
+.social-media,
+.copyright {
+  font-size: 14px;
+}
+
+/*======================== Resolusi 1440p ========================*/
+
+@media screen and (min-width: 1440px) {
+  .navbar-link ul {
+    margin-right: 7.5em;
+  }
+
+  .header-img {
+    width: 75%;
+    top: -8%;
+  }
+
+  .header-page .container {
+    right: 3%;
+  }
+
+  .container .btn-shopping {
+    margin-left: 61.5%;
+  }
+
+  .about-chipio-containers {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 0 200px;
+  }
+
+  .about-chipio-containers .card-layout:last-child p:nth-child(2) {
+    text-align: justify;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+  }
+
+  hr {
+    margin: 5px auto 0 auto;
+  }
+
+  .team-card-containers {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .team-card-containers .card-layout .card-img {
+    height: 38vh;
+    width: 65%;
+  }
+
+  .contact-card-containers {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+/*======================== Resolusi 1024p ========================*/
+
+@media screen and (max-width: 1024px) {
+  .navbar-link ul {
+    margin-right: 7.5em;
+    padding: 1.3em 0.2em;
+  }
+
+  li {
+    margin: 0 0.9em;
+    font-size: 1em;
+  }
+
+  .header-img {
+    width: 70%;
+    top: 9%;
+  }
+
+  .header-page .container {
+    top: 56%;
+  }
+
+  .container h1 {
+    font-size: 2em;
+  }
+
+  .container h3 {
+    font-size: 1.58em;
+  }
+
+  .container .btn-shopping {
+    font-size: 15px;
+    margin-left: 57.5%;
+  }
+
+  .about-chipio-title h1 {
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .about-chipio-containers {
+    padding: 0 60px;
+    margin-left: 1.5%;
+  }
+
+  .about-chipio-containers .card-layout {
+    width: 400px;
+    height: 332px;
+  }
+
+  .about-chipio-containers .card-layout .card-img {
+    width: 425px;
+    height: 337px;
+    margin-left: 47.5%;
+    margin-top: -1%;
+  }
+
+  .about-chipio-containers .card-layout:last-child p:first-child {
+    width: 90%;
+
+    margin-top: 5.5%;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+  }
+
+  .about-chipio-containers .card-layout:last-child p:last-child {
+    width: 90%;
+
+    margin-top: 5%;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+  }
+
+  hr {
+    width: 180px;
+  }
+
+  .about-products-containers .card-layout:last-child {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .team-card-containers {
+    padding: 30px 110px 40px 110px;
+    grid-gap: 20px;
+  }
+
+  .team-card-containers .card-layout {
+    width: 115%;
+    margin-left: -25%;
+  }
+
+  .team-card-containers .card-layout:nth-child(2) {
+    margin-left: -7%;
+  }
+
+  .team-card-containers .card-layout:last-child {
+    margin-left: 10%;
+    margin-right: -50%;
+  }
+
+  .team-card-containers .card-layout:hover:first-child {
+    overflow: hidden;
+    margin: 1% 0 -1px -1px;
+    transform: scale(1.05);
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
+    margin-left: -25%;
+  }
+
+  .team-card-containers .card-layout .card-img {
+    height: 34vh;
+  }
+
+  .contact-card-containers {
+    grid-gap: 50px;
+  }
+}
+
+/*======================== Resolusi 768p ========================*/
+
+@media screen and (max-width: 768px) {
+  .navbar-link ul {
+    display: block;
+    position: fixed;
+    right: -76.5%;
+    top: -1%;
+    background-color: white;
+    width: 35%;
+    text-align: center;
+    height: 101vh;
+    transition: 0.8s ease;
+  }
+
+  .openbtn,
+  .closebtn {
+    display: block;
+    top: 0;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .openbtn {
+    top: 23%;
+    border: none;
+    background-color: transparent;
+    right: 9.5%;
+  }
+
+  .closebtn {
+    left: 5%;
+    top: -15.8%;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  li {
+    font-size: 1.6em;
+    margin: 3.5em 0 -2em 0;
+  }
+
+  .header-page {
+    height: 90vh;
+  }
+
+  .header-img {
+    width: 70%;
+    top: 15%;
+  }
+
+  .header-page .container {
+    top: 49%;
+  }
+
+  .container h1 {
+    font-size: 1.6em;
+  }
+
+  .container h3 {
+    font-size: 1.28em;
+  }
+
+  .container .btn-shopping {
+    font-size: 12px;
+    margin-left: 54%;
+  }
+
+  .about-chipio-containers .card-layout {
+    margin-left: 16%;
+  }
+
+  .about-chipio-containers .card-layout:last-child {
+    margin-bottom: 10%;
+  }
+
+  .team-card-containers .card-layout:nth-child(2) {
+    margin-left: 11%;
+  }
+
+  .team-card-containers .card-layout:last-child {
+    margin-top: 5%;
+    margin-left: 48%;
+  }
+
+  .contact-card-containers .card-layout:last-child {
+    margin-left: 55%;
+    width: 100%;
+  }
+
+  footer .footer-contact-containers .logo-icon {
+    margin-top: -10%;
+    margin-left: -10%;
+  }
+
+  footer .footer-contact-containers .logo-icon span {
+    font-size: 1.2em;
+  }
+
+  footer .footer-contact-containers .logo-icon .address {
+    font-size: 0.8em;
+  }
+
+  footer .footer-contact-containers .social-media {
+    font-size: 0.8em;
+  }
+
+  footer .footer-contact-containers .social-media span {
+    margin-left: 65%;
+  }
+
+  footer .copyright {
+    font-size: 0.8em;
+  }
+}
+
+/*======================== Resolusi 425p ========================*/
+
+@media screen and (max-width: 425px) {
+  .navbar-link ul {
+    right: -80.5%;
+    height: 147vh;
+    width: 40%;
+    z-index: 999;
+  }
+
+  .closebtn {
+    left: 5%;
+    top: -10.1%;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  li {
+    font-size: 1.4em;
+    /* margin: 3.5em 0 -2em 0; */
+  }
+
+  .header-page {
+    width: 144%;
+    height: 80vh;
+  }
+
+  .header-img {
+    width: 100%;
+    top: 16%;
+  }
+
+  .container h1 {
+    font-size: 1.3em;
+    -webkit-text-stroke: 1.5px #ef5350;
+  }
+
+  .container h3 {
+    font-size: 1em;
+  }
+
+  .header-page .container {
+    top: 43%;
+    right: -40%;
+    width: 75%;
+  }
+
+  .container .btn-shopping {
+    font-size: 11px;
+    margin-left: 48%;
+  }
+
+  .about-chipio-containers .card-layout {
+    width: 278px;
+    height: 212px;
+    margin-left: 4%;
+  }
+
+  .about-chipio-title h1 {
+    /* padding: 0.75em 5.5em; */
+    margin-left: 58%;
+  }
+
+  .about-chipio-containers .card-layout {
+    margin-left: 9%;
+  }
+
+  .about-chipio-containers .card-layout:first-child {
+    width: 378px;
+    height: 332px;
+  }
+
+  .about-chipio-containers .card-layout:first-child .card-img {
+    width: 398px;
+    height: 332px;
+    margin-top: -0.5%;
+  }
+
+  .about-chipio-containers .card-layout:last-child {
+    width: 378px;
+    height: 280px;
+  }
+
+  hr {
+    margin: 5px 52.2% 0 52.2%;
+  }
+
+  .about-title h1 {
+    /* padding: 0.75em 5.5em; */
+    margin-left: 52.5%;
+  }
+
+  .about-products-containers .card-layout:last-child {
+    grid-column-start: 1;
+    grid-row-start: 4;
+  }
+
+  .about-products-containers {
+    width: 144%;
+  }
+
+  .about-chipio-containers .card-layout .card-img {
+    width: 305px;
+    height: 207px;
+  }
+
+  .featured-containers span h2 {
+    margin-left: 47.5%;
+  }
+
+  .featured-card-containers {
+    width: 144%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .featured-card-containers .card-layout {
+    margin-left: 13.5%;
+  }
+
+  .team-title-containers h2 {
+    margin-left: 51.5%;
+  }
+
+  .team-card-containers {
+    width: 144%;
+    padding: 30px 70px 40px 70px;
+  }
+
+  .team-card-containers .card-layout {
+    margin-left: 21%;
+    width: 60%;
+  }
+
+  .team-card-containers .card-layout:nth-child(2) {
+    margin-left: 21%;
+    margin-top: 5%;
+  }
+
+  .team-card-containers .card-layout:hover:first-child {
+    margin-left: 21%;
+  }
+
+  .team-card-containers .card-layout:last-child {
+    margin-top: 5%;
+    margin-left: 21%;
+  }
+
+  .contact-title-containers span h2 {
+    margin-left: 50%;
+  }
+
+  .contact-card-containers {
+    width: 144%;
+  }
+
+  .contact-card-containers .card-layout:last-child {
+    margin-left: 0;
+  }
+
+  .contact-card-containers .card-layout .card-img {
+    width: 15%;
+  }
+
+  footer {
+    width: 144%;
+  }
+
+  footer .footer-contact-containers .logo-icon {
+    /* margin-top: -10%; */
+    margin-left: -20%;
+  }
+
+  footer .footer-contact-containers .social-media span {
+    margin-left: 0;
+  }
+}
+
+/*======================== Resolusi 375p ========================*/
+
+@media screen and (max-width: 375px) {
+  .navbar-link ul {
+    height: 165vh;
+  }
+
+  .header-img {
+    width: 150%;
+    top: 10%;
+    left: -19%;
+  }
+
+  .header-page {
+    width: 163.5%;
+    height: 80vh;
+  }
+
+  .container h1 {
+    font-size: 1.6em;
+  }
+
+  .header-page .container {
+    width: 75%;
+    right: -60%;
+  }
+
+  .container h3 {
+    font-size: 1.1em;
+  }
+
+  .container .btn-shopping {
+    margin-left: 34%;
+    font-size: 13px;
+  }
+
+  .about-chipio-title h1 {
+    margin-left: 71%;
+  }
+
+  hr {
+    margin: 5px 58.2% 0 58.2%;
+  }
+
+  .about-title h1 {
+    margin-left: 61.5%;
+  }
+
+  .about-products-containers {
+    width: 163.5%;
+  }
+
+  .about-products-containers .card-layout .about-icon {
+    width: 25vh;
+    height: 25vh;
+  }
+
+  .about-products-containers .card-layout h3 {
+    font-size: 30px;
+  }
+
+  .about-products-containers .card-layout h4 {
+    font-size: 22px;
+  }
+
+  .featured-containers span h2 {
+    margin-left: 54.5%;
+    margin-right: -9.5%;
+  }
+
+  .featured-card-containers {
+    width: 163.5%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .team-card-containers {
+    width: 163.5%;
+  }
+
+  .team-title-containers {
+    margin-left: -2.5%;
+  }
+
+  .team-title-containers h2 {
+    margin-left: 67.5%;
+  }
+
+  .team-card-containers .card-layout {
+    margin-left: 19%;
+  }
+
+  .team-card-containers .card-layout:hover:first-child {
+    margin-left: 19%;
+  }
+
+  .team-card-containers .card-layout:nth-child(2) {
+    margin-left: 19%;
+    margin-top: 5%;
+  }
+
+  .team-card-containers .card-layout:last-child {
+    margin-top: 5%;
+    margin-left: 19%;
+  }
+
+  .contact-card-containers {
+    width: 163.5%;
+  }
+
+  .contact-title-containers span h2 {
+    margin-left: 70%;
+  }
+
+  footer {
+    width: 163.5%;
+  }
+
+  .copyright {
+    margin-left: 2%;
+  }
+}
