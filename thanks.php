@@ -18,7 +18,7 @@ header( "refresh:3;url=index.php" );
     <div class="loading-page">
         <h1 class="text-center">Terima Kasih Telah Membeli Produk Kami</h1>
         <br>
-        <h3 class="loading text-center">Anda akan di arahkan ke dalam Landing Page setelah 3 detik</h3>
+        <h3 class="loading text-center">Anda akan di arahkan ke dalam Landing Page setelah 3 detik.</h3>
     </div>
 </body>
 </html>
